@@ -12,9 +12,9 @@ export function TodoApp(props) {
 			<TodoForm />
 			<section className="main">
         <TodoToggleAll />
-				<TodoList todos={props.data}/>
+				<TodoList todos={props.todoItems}/>
 			</section>
-			<TodoFooter todos={props.data}/>
+			<TodoFooter todos={props.todoItems}/>
 		</section>
 		<Footer />
   </div>

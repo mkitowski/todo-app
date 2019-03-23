@@ -1,4 +1,5 @@
 import React from "react"
+import { Counter } from './Counter'
 
 export const Footer = () => {
   return <footer className="info">
@@ -6,5 +7,6 @@ export const Footer = () => {
     <p>Template by <a href="http://sindresorhus.com">Sindre Sorhus</a></p>
     <p>Created by <a href="http://todomvc.com">you</a></p>
     <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+    <Counter />
   </footer>
 }

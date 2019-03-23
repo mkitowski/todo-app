@@ -1,6 +1,22 @@
 import React from "react"
 
 export class TodoItem extends React.Component {
+  componentWillReceiveProps() {
+    // console.log('Heyyy, new props: ', this.props)
+  }
+
+  componentWillUpdate(nextProps) {
+    console.log('componentWillUpdate', this.props)
+  }
+
+  componentDidUpdate() {
+    console.log('componentDidUpdate', this.props)
+  }
+
+  componentWillUnmount() {
+    console.log('I\'m dead!')
+  }
+
   render() {
     let completedClassName = ""
     if (this.props.isDone) {
